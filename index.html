@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TempMail - Temporary Email</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Telegram Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HR`s T.M</h1>
+    
+    <!-- Temporary email input field -->
+    <input type="text" id="tempEmail" placeholder="Your temporary email will appear here" readonly>
+    <button onclick="generateTempEmail()">Generate</button>
+    
+    <!-- Inbox display section -->
+    <div id="emailList" class="emailList">
+      <h3>Inbox</h3>
+      <ul id="emailListItems"></ul>
+    </div>
+    
+    <!-- Email details display section -->
+    <div id="emailDetails" class="emailDetails" style="display: none;">
+      <h3>Email Details</h3>
+      <p id="emailSubject"></p>
+      <p><strong>From:</strong> <span id="emailFrom"></span></p>
+      <p id="emailBody"></p>
+    </div>
+    
+    <!-- Button to check inbox -->
+    <button onclick="fetchEmails()">Check Inbox</button>
+  </div>
+
+  <!-- Telegram Floating Action Button -->
+  <a href="https://t.me/Termux_Team_BD" target="_blank" class="fab">
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
