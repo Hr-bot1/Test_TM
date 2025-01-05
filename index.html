@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary Email Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HR`s T.M</h1>
+        <input type="text" id="tempEmail" placeholder="Generated Temp Email" readonly>
+        <button onclick="generateTempEmail()">Generate Temp Email</button>
+
+        <div id="emailList">
+            <h2>Inbox</h2>
+            <ul id="emailListItems"></ul>
+        </div>
+
+        <div id="emailDetails" style="display:none;">
+            <h3 id="emailSubject"></h3>
+            <p id="emailFrom"></p>
+            <p id="emailBody"></p>
+        </div>
+    </div>
+<!-- Floating Telegram FAB Icon with Custom Image -->
+  <a href="https://t.me/yourTelegramUsername" class="fab" target="_blank" title="Contact us on Telegram">
+    <img src="https://i.postimg.cc/13KGnnzB/IMG-20241108-163334.jpg" alt="Telegram Logo"> <!-- Custom Image -->
+  </a>
+    <script src="scripts.js"></script>
+</body>
+</html>
