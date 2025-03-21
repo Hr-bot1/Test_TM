@@ -1,6 +1,6 @@
 // Function to generate a temporary email address
 function generateTempEmail() {
-  const url = "https://www.1secmail.com/api/v1/";
+  const url = "https://www.1secmail.cc/";
   const params = {
     'action': 'genRandomMailbox',
     'count': '1'
